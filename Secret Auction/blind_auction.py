@@ -4,6 +4,7 @@ keep = True
 def find_highest_bidder(bidding_dictionary):
     maxValue = 0
     winner = ""
+    # max(bidding_dictionary, key=bidding_dictionary.get) could be used.
     for key, value in bidding_dictionary.items():
         if value > maxValue:
             maxValue = value
