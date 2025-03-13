@@ -16,12 +16,12 @@ while keep:
     price = float(input("What is your bind? $"))
     bids[name] = price
     should_continue = input("Are there any other bidders? Type 'yes' or 'no'.\n").lower()
-    if should_continue == "yes":
-        print("\n" * 100)
-        continue
-    else:
+    if should_continue == "no":
         winner, maxValue = find_highest_bidder(bids)
         print(f"The winner is {winner}: ${maxValue}")
         keep = False
+    else:
+        print("\n" * 100)
+        continue
 
 
