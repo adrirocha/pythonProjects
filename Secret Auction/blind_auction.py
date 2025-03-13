@@ -17,6 +17,7 @@ while keep:
     bids[name] = price
     should_continue = input("Are there any other bidders? Type 'yes' or 'no'.\n").lower()
     if should_continue == "no":
+        print("\n" * 100)
         winner, maxValue = find_highest_bidder(bids)
         print(f"The winner is {winner}: ${maxValue}")
         keep = False
