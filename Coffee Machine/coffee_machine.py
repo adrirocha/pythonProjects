@@ -76,14 +76,16 @@ def checkCoffee(choice, resources):
 
 while True:
     choice = input("What would you like? (espresso/latte/cappuccino):").lower()
-    if choice == "report":
-        doReport(resources)
-        continue
-    canDoCoffee = checkCoffee(choice, resources)
 
     if choice == "off":
         break
     
+    if choice == "report":
+        doReport(resources)
+        continue
+
+    canDoCoffee = checkCoffee(choice, resources)
+
     if not canDoCoffee:
         missingResource = whatIsMissing(choice, resources)
         print("Sorry. There is no available resources.")
