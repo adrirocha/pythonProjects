@@ -2,6 +2,9 @@ from menu import Menu
 from coffee_maker import CoffeeMaker
 from money_machine import MoneyMachine
 
+# I will not include the Menu, CoffeeMaker and MoneyMachine modules in the folder because they are part of a challenge, 
+# so it will only be in this folder my challenge resolution code.
+
 menu = Menu()
 coffeeMaker = CoffeeMaker()
 moneyMachine = MoneyMachine()
