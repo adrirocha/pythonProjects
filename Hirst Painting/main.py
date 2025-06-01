@@ -1,6 +1,10 @@
 import turtle as t
 from random import choice
 
+# import colorgram
+
+# rgb_colors = [(color.rgb.r, color.rgb.g, color.rgb.b) for color in colorgram.extract('image.jpg', 20)]
+
 color_list = [(140, 22, 67), (77, 107, 190), (142, 151, 43), 
  (235, 211, 82), (218, 164, 56), (110, 151, 220), 
  (232, 205, 218), (60, 128, 64), (178, 68, 142), 
