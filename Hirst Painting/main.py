@@ -3,7 +3,7 @@ from random import choice
 
 # import colorgram
 
-# rgb_colors = [(color.rgb.r, color.rgb.g, color.rgb.b) for color in colorgram.extract('image.jpg', 20)]
+# color_list = [(color.rgb.r, color.rgb.g, color.rgb.b) for color in colorgram.extract('image.jpg', 20)]
 
 color_list = [(140, 22, 67), (77, 107, 190), (142, 151, 43), 
  (235, 211, 82), (218, 164, 56), (110, 151, 220), 
