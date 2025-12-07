@@ -30,7 +30,6 @@ while True:
                 upgrade_id = upgrade.get_attribute("id")
                 try:
                     upgrade_text = upgrade.find_element(By.CLASS_NAME, "price").text
-                    # Remove vírgulas se houver
                     upgrade_price = int(upgrade_text.replace(",", ""))
                     price_upgrade_dict[upgrade_price] = upgrade_id
                 except ValueError:
