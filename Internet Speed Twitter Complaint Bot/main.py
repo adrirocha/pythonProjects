@@ -3,7 +3,6 @@ import os
 import tweepy
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support import expected_conditions as ec
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.common.exceptions import TimeoutException, NoSuchElementException
@@ -43,6 +42,8 @@ class InternetSpeedTwitterBot:
             accept_btn = self.short_wait.until(ec.presence_of_element_located((By.ID, "onetrust-accept-btn-handler")))
             accept_btn.click()
         except NoSuchElementException:
+            pass
+        except TimeoutException:
             pass
 
         self.driver.find_element(By.CLASS_NAME, "start-text").click()
